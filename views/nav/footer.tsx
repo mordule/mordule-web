@@ -7,17 +7,9 @@ const NavFooter = () => {
 		<div className="fixed bottom-0 items-center text-sm pb-4 m-auto justify-center">
 			<Link
 				target="_blank"
-				href="https://thegrtnx.com.ng">
-				&copy; Abolade Greatness {currentYear}{" "}
-			</Link>{" "}
-			-{" "}
-			<span>
-				<Link
-					target="_blank"
-					href="https://github.com/thegrtnx/internet-speed-checker">
-					Licensed under MIT
-				</Link>
-			</span>
+				href="https://mordule.com">
+				&copy; mordule from curlback {currentYear}{" "}
+			</Link>
 		</div>
 	);
 };

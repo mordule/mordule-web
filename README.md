@@ -32,14 +32,9 @@ npm run start
 
 👤 **curlback inc**
 
-* Website: https://curlback.com
-* Twitter: [@curlback](https://twitter.com/curlback)
-* Github: [@curlback](https://github.com/curlback)
-* LinkedIn: [@curlback](https://linkedin.com/in/curlback)
+- Website: https://curlback.com
+- Twitter: [@curlback](https://twitter.com/curlback)
+- Github: [@curlback](https://github.com/curlback)
+- LinkedIn: [@curlback](https://linkedin.com/in/curlback)
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+---

@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { MaxWidthWrapper, ThemeProvider } from "@/lib";
+import { MaxWidthWrapper, ThemeProvider, cn } from "@/lib";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
+import { NavFooter } from "@/views";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,13 +31,16 @@ export default function RootLayout({
 			suppressHydrationWarning>
 			<GoogleTagManager gtmId="GTM-PCLTNXKQ" />
 			<GoogleAnalytics gaId="G-6CZK0S66G3" />
-			<body className={inter.className}>
+			<body className={cn("container min-h-screen bg-background max-w-screen-2xl m-auto home font-san antialiased", inter.className)}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="dark"
 					enableSystem
 					disableTransitionOnChange>
-					<MaxWidthWrapper>{children}</MaxWidthWrapper>
+					<MaxWidthWrapper>
+						{children}
+						<NavFooter />
+					</MaxWidthWrapper>
 				</ThemeProvider>
 			</body>
 		</html>
