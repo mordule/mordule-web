@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { MaxWidthWrapper, ThemeProvider } from "@/lib";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
@@ -24,10 +25,20 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<GoogleTagManager gtmId="GTM-PT7G5R5D" />
+		<html
+			lang="en"
+			suppressHydrationWarning>
+			<GoogleTagManager gtmId="GTM-PCLTNXKQ" />
 			<GoogleAnalytics gaId="G-6CZK0S66G3" />
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="dark"
+					enableSystem
+					disableTransitionOnChange>
+					<MaxWidthWrapper>{children}</MaxWidthWrapper>
+				</ThemeProvider>
+			</body>
 		</html>
 	);
 }
