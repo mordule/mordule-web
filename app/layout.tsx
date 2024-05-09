@@ -8,8 +8,14 @@ import { NavFooter } from "@/views";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Mordule",
-	description: "Save more on deployment bills",
+	title: {
+		default: "Mordule - Save more on deployment bills",
+		template: "%s",
+	},
+	description: "Mordule is a powerful cloud management platform that helps businesses optimize their cloud infrastructure and save on deployment costs",
+	twitter: {
+		card: "summary_large_image",
+	},
 };
 
 export const viewport: Viewport = {
