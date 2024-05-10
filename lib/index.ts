@@ -1,6 +1,7 @@
-import { cn } from "./utils";
+import { ThemeProvider } from "./theme-provider";
 import MaxWidthWrapper from "./maxWidthWrapper";
-import { ThemeProvider } from "./themeProvider";
+
+import { cn } from "./utils";
 import { ModeToggle } from "./modeToggler";
 
-export { cn, MaxWidthWrapper, ThemeProvider, ModeToggle };
+export { ThemeProvider, MaxWidthWrapper, cn, ModeToggle };

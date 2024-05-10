@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { MaxWidthWrapper, ThemeProvider, cn } from "@/lib";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
-import { NavFooter } from "@/views";
+import { NavFooter, Header } from "@/views";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,17 +13,22 @@ export const metadata: Metadata = {
 		template: "%s",
 	},
 	description: "Mordule is a powerful cloud management platform that helps businesses optimize their cloud infrastructure and save on deployment costs",
+	robots: {
+		index: true,
+		follow: true,
+		nocache: false,
+		googleBot: {
+			index: true,
+			follow: true,
+			noimageindex: true,
+			"max-video-preview": -1,
+			"max-image-preview": "large",
+			"max-snippet": -1,
+		},
+	},
 	twitter: {
 		card: "summary_large_image",
 	},
-};
-
-export const viewport: Viewport = {
-	themeColor: "#000",
-	width: "device-width",
-	initialScale: 1,
-	maximumScale: 1,
-	userScalable: false,
 };
 
 export default function RootLayout({
@@ -37,13 +42,14 @@ export default function RootLayout({
 			suppressHydrationWarning>
 			<GoogleTagManager gtmId="GTM-PCLTNXKQ" />
 			<GoogleAnalytics gaId="G-6CZK0S66G3" />
-			<body className={cn("container min-h-screen bg-background max-w-screen-2xl m-auto home font-san antialiased", inter.className)}>
+			<body className={cn("bg-background min-h-screen max-w-screen-2xl m-auto antialiased px-10 py-4", inter.className)}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="dark"
 					enableSystem
 					disableTransitionOnChange>
 					<MaxWidthWrapper>
+						<Header />
 						{children}
 						<NavFooter />
 					</MaxWidthWrapper>

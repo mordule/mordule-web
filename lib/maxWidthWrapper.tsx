@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib";
 import { NextUIProvider } from "@nextui-org/react";
 import { InternetStatus } from "react-check-internet-status";
 
@@ -11,8 +11,8 @@ const MaxWidthWrapper = ({ className, children }: { className?: string; children
 			<NextUIProvider>{children}</NextUIProvider>
 			<InternetStatus
 				position="bottom-right"
-				onlineMessage="🚀 Online 🚀"
-				offlineMessage="❌ Offline ❌"
+				onlineMessage="Internet Restored 🚀"
+				offlineMessage="No/Bad Internet Connection 😭"
 			/>
 		</main>
 	);
