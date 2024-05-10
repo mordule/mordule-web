@@ -42,17 +42,13 @@ export default function RootLayout({
 			suppressHydrationWarning>
 			<GoogleTagManager gtmId="GTM-PCLTNXKQ" />
 			<GoogleAnalytics gaId="G-6CZK0S66G3" />
-			<body className={cn("bg-background min-h-screen max-w-screen-2xl m-auto antialiased px-10 py-4", inter.className)}>
+			<body className={cn("bg-background min-h-screen max-w-screen-2xl m-auto antialiased", inter.className)}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="dark"
 					enableSystem
 					disableTransitionOnChange>
-					<MaxWidthWrapper>
-						<Header />
-						{children}
-						<NavFooter />
-					</MaxWidthWrapper>
+					<MaxWidthWrapper>{children}</MaxWidthWrapper>
 				</ThemeProvider>
 			</body>
 		</html>
