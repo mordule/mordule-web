@@ -45,10 +45,11 @@ export default function RootLayout({
 			<body className={cn("bg-background min-h-screen max-w-screen-2xl m-auto antialiased", inter.className)}>
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="dark"
+					defaultTheme="light"
 					enableSystem
 					disableTransitionOnChange>
 					<MaxWidthWrapper>{children}</MaxWidthWrapper>
+					<NavFooter />
 				</ThemeProvider>
 			</body>
 		</html>

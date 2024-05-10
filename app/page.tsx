@@ -7,32 +7,51 @@ import { SquareArrowOutUpRight } from "lucide-react";
 export default function Page() {
 	return (
 		<>
-			<div className="lg:inline-grid m-auto lg:items-center lg:text-center lg:justify-center w-full pt-28">
-				<h1 className={cn("lg:text-7xl lg:w-[60%] m-auto lg:leading-[4.8rem]", GeneralSans_Meduim.className)}>Save much more on deployment &nbsp;bills</h1>
-				<p className={cn("py-8 text-xl lg:w-[50%] m-auto", GeneralSans_Regular.className)}>
-					A cloud deployment server developed by{" "}
-					<Link
-						href="https://curlback.com"
-						target="_blank">
-						<u>curlback</u>&nbsp;
-						<SquareArrowOutUpRight className="inline-flex w-4" />
-					</Link>{" "}
-					for{" "}
-					<Link href="https://hynitr.com">
-						<u>hynitr</u>&nbsp;
-						<SquareArrowOutUpRight className="inline-flex w-4" />
-					</Link>{" "}
-					projects. Powered by{" "}
-					<Link href="https://usedothost.com">
-						<u>dothost</u>&nbsp;
-						<SquareArrowOutUpRight className="inline-flex w-4" />
-					</Link>{" "}
-					and{" "}
-					<Link href="https://coolify.com">
-						<u>coolify</u>&nbsp;
-						<SquareArrowOutUpRight className="inline-flex w-4" />
-					</Link>{" "}
-				</p>
+			<div className="lg:flex m-auto lg:items-center lg:text-center lg:justify-center w-full h-screen">
+				<div>
+					<div>
+						<h1 className={cn("lg:text-7xl lg:w-[60%] m-auto lg:leading-[4.8rem]", GeneralSans_Meduim.className)}>save much more on deployment &nbsp;bills</h1>
+						<p className={cn("py-8 text-xl lg:w-[47%] m-auto", GeneralSans_Regular.className)}>
+							A cloud deployment server developed by{" "}
+							<Link
+								href="https://curlback.com"
+								target="_blank">
+								<u>curlback</u>&nbsp;
+								<SquareArrowOutUpRight className="inline-flex w-4" />
+							</Link>{" "}
+							for{" "}
+							<Link href="https://hynitr.com">
+								<u>hynitr</u>&nbsp;
+								<SquareArrowOutUpRight className="inline-flex w-4" />
+							</Link>{" "}
+							projects. Powered by{" "}
+							<Link href="https://usedothost.com">
+								<u>dothost</u>&nbsp;
+								<SquareArrowOutUpRight className="inline-flex w-4" />
+							</Link>{" "}
+							and{" "}
+							<Link href="https://coolify.com">
+								<u>coolify</u>&nbsp;
+								<SquareArrowOutUpRight className="inline-flex w-4" />
+							</Link>{" "}
+						</p>
+					</div>
+
+					<div className="m-auto text-center">
+						<Button
+							as={Link}
+							href=""
+							className={cn("me-5 px-8 py-6", GeneralSans_Meduim.className)}>
+							Dashboard
+						</Button>
+						<Button
+							as={Link}
+							href=""
+							className={cn("me-5 px-8 py-6", GeneralSans_Meduim.className)}>
+							Get Access
+						</Button>
+					</div>
+				</div>
 			</div>
 		</>
 	);
