@@ -4,12 +4,19 @@ const NavFooter = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<div className="fixed bottom-0 items-end text-sm pb-4 m-auto justify-end">
+		<div className="container flex px-14 fixed bottom-0 text-sm pb-4 m-auto justify-between">
 			<Link
 				target="_blank"
 				href="https://mordule.com"
 				className="text-xs">
 				&copy; mordule from curlback {currentYear}{" "}
+			</Link>
+
+			<Link
+				target="_blank"
+				href="https://status.mordule.com"
+				className="text-xs">
+				View Network Status
 			</Link>
 		</div>
 	);

@@ -1,17 +1,21 @@
+import Link from "next/link";
 import Image from "next/image";
+import { ModeToggle } from "@/lib";
+
 const Header = () => {
 	return (
-		<nav className="flex m-auto py-5 items-center">
-			<div>
+		<div className="container flex px-14 fixed top-8 text-sm pb-4 m-auto justify-between">
+			<Link href="/">
 				<Image
 					src="/images/logo.png"
 					alt="mordule"
 					width={57}
 					height={57}
-					className="h-auto w-7"
+					className="h-auto w-8"
 				/>
-			</div>
-		</nav>
+			</Link>
+			<ModeToggle />
+		</div>
 	);
 };
 

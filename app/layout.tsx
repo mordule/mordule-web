@@ -48,6 +48,7 @@ export default function RootLayout({
 					defaultTheme="light"
 					enableSystem
 					disableTransitionOnChange>
+					<Header />
 					<MaxWidthWrapper>{children}</MaxWidthWrapper>
 					<NavFooter />
 				</ThemeProvider>

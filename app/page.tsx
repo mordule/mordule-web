@@ -20,35 +20,41 @@ export default function Page() {
 								<SquareArrowOutUpRight className="inline-flex w-4" />
 							</Link>{" "}
 							for{" "}
-							<Link href="https://hynitr.com">
+							<Link
+								href="https://hynitr.com"
+								target="_blank">
 								<u>hynitr</u>&nbsp;
 								<SquareArrowOutUpRight className="inline-flex w-4" />
 							</Link>{" "}
 							projects. Powered by{" "}
-							<Link href="https://usedothost.com">
+							<Link
+								href="https://usedothost.com"
+								target="_blank">
 								<u>dothost</u>&nbsp;
 								<SquareArrowOutUpRight className="inline-flex w-4" />
 							</Link>{" "}
 							and{" "}
-							<Link href="https://coolify.com">
+							<Link
+								href="https://coolify.io"
+								target="_blank">
 								<u>coolify</u>&nbsp;
 								<SquareArrowOutUpRight className="inline-flex w-4" />
 							</Link>{" "}
 						</p>
 					</div>
 
-					<div className="m-auto text-center">
+					<div className="m-auto mt-4 text-center">
 						<Button
 							as={Link}
 							href=""
-							className={cn("me-5 px-8 py-6", GeneralSans_Meduim.className)}>
-							Dashboard
+							className={cn("me-5 px-10 py-6", GeneralSans_Meduim.className)}>
+							Access Dashboard
 						</Button>
 						<Button
 							as={Link}
 							href=""
-							className={cn("me-5 px-8 py-6", GeneralSans_Meduim.className)}>
-							Get Access
+							className={cn("ms-5 px-10 bg-primary text-secondary py-6", GeneralSans_Meduim.className)}>
+							Get Deploy Access
 						</Button>
 					</div>
 				</div>
