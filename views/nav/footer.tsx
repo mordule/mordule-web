@@ -4,7 +4,7 @@ const NavFooter = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<div className="container flex px-14 fixed bottom-0 text-sm pb-4 m-auto justify-between">
+		<div className="container flex lg:px-14 fixed bottom-0 text-sm pb-4 m-auto justify-between">
 			<Link
 				target="_blank"
 				href="https://mordule.com"
