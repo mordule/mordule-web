@@ -46,13 +46,15 @@ export default function Page() {
 					<div className="m-auto mt-4 text-center">
 						<Button
 							as={Link}
-							href=""
+							target="_blank"
+							href="https://engine.mordule.com"
 							className={cn("me-5 px-10 py-6", GeneralSans_Meduim.className)}>
 							Access Dashboard
 						</Button>
 						<Button
 							as={Link}
-							href=""
+							target="_blank"
+							href="https://wa.link/26bexl"
 							className={cn("ms-5 px-10 bg-primary text-secondary py-6", GeneralSans_Meduim.className)}>
 							Get Deploy Access
 						</Button>
