@@ -7,7 +7,7 @@ import { InternetStatus } from "react-check-internet-status";
 
 const MaxWidthWrapper = ({ className, children }: { className?: string; children: ReactNode }) => {
 	return (
-		<main className={cn("", className)}>
+		<main className={cn("container px-7", className)}>
 			<NextUIProvider>{children}</NextUIProvider>
 			<InternetStatus
 				position="bottom-right"

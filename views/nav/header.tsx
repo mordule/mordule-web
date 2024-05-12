@@ -4,7 +4,7 @@ import { ModeToggle } from "@/lib";
 
 const Header = () => {
 	return (
-		<div className="container flex lg:px-14 fixed top-8 text-sm pb-4 m-auto justify-between">
+		<div className="container flex px-7 lg:px-14 fixed top-8 text-sm pb-4 m-auto justify-between">
 			<Link href="/">
 				<Image
 					src="/images/logo.png"
